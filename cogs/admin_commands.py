@@ -17,12 +17,7 @@ class AdminCommands(commands.Cog):
         self.bot = bot
 
     #region high only commands
-     #region cog stuff
-    @commands.is_owner()
-    @commands.command()
-    async def json(self, ctx):
-        await ctx.send(file = discord.File('settings.json'))
-    
+    #region cog stuff
     @commands.is_owner()
     @commands.command(hidden=True)
     async def load(self, ctx: commands.Context, *, cog: str):
