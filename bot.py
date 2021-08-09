@@ -12,10 +12,7 @@ load_dotenv(".env")
 
 intents = discord.Intents.default()
 intents.members = True
-intents.guilds = True
-intents.messages = True
-intents.bans = True
-intents.members = True
+
 
 initial_extensions = ['cogs.auto_moderation', 'cogs.admin_commands']
 
